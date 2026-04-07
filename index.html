@@ -47,7 +47,7 @@ const loadAnimatedGLTF = async (fn, x0, cnt, scale, rotatey) => {
     //const y = i * .2 - .1;
     m.position.set(x, y, z);
     //const scale = 0.1; //  << i;
-    const scale2 = 0.5;
+    const scale2 = 0.1;
     m.scale.set(scale2, scale2, scale2);
     m.rotation.y = rotatey;
     m.mixer = new THREE.AnimationMixer(m);
