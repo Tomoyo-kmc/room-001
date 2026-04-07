@@ -26,7 +26,7 @@ scene.add(label);
 
 const fns = [
   //"cc0____snow_crab_chionoecetes_opilio.glb", // 18M
-  "cc0___alaskan_pink_shrimp_p._eous.glb", // 28M
+  "room.glb", // 28M
   //"cc0___five-ray_yellowtail_s._quinqueradiata.glb", // 49M
 ];
 
@@ -47,7 +47,7 @@ const loadAnimatedGLTF = async (fn, x0, cnt, scale, rotatey) => {
     //const y = i * .2 - .1;
     m.position.set(x, y, z);
     //const scale = 0.1; //  << i;
-    const scale2 = scale * (i * 2 + 1);
+    const scale2 = 0.5;
     m.scale.set(scale2, scale2, scale2);
     m.rotation.y = rotatey;
     m.mixer = new THREE.AnimationMixer(m);
